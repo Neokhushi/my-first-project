@@ -1,0 +1,249 @@
+
+    /* Make navbar transparent */
+.navbar {
+  background-color: #0E1F16;
+  backdrop-filter: blur(6px);
+}
+
+/* Hero Section with banner image */
+.hero {
+  background: url('img/hero.png') no-repeat center center/cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Optional overlay for dark effect */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Text styling inside hero */
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Button styling */
+.btn-success {
+  background: linear-gradient(90deg, #a7e637, #6fbf3b);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #6fbf3b, #a7e637);
+}
+
+/* Marketing Section */
+.marketing-section {
+  background: #f9fdfb;
+}
+
+.marketing-section h2 {
+  color: #0e2a1f;
+}
+
+.marketing-section p {
+  color: #6b757d;
+  font-size: 15px;
+}
+
+.marketing-section .see-more {
+  color: #7bb13c;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.marketing-section .see-more:hover {
+  text-decoration: underline;
+}
+
+/* Service Boxes */
+.service-box {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.service-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+}
+/* Social Media Section */
+.social-section {
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-section h2 {
+  font-weight: 700;
+  color: #0e2a1f;
+}
+
+.social-section p {
+  color: #6b757d;
+  font-size: 16px;
+  max-width: 400px;
+}
+
+/* Main board container */
+.social-graphic {
+  position: relative;
+  display: inline-block;
+}
+
+.main-board {
+  width: 90%;
+  border-radius: 10px;
+  z-index: 5;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Floating icons */
+.social-icon {
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Correct positions for icons */
+.fb { top: -25px; left: 20px; }
+.ig { top: -40px; right: 40px; }
+.tm { bottom: 30px; left: 30px; }
+.vk { bottom: 40px; right: 100px; }
+.nt { bottom: -10px; right: 20px; }
+
+/* Decorative boxes */
+.shape {
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+}
+
+.greenbox {
+  bottom: -40px;
+  left: -20px;
+  width: 70px;
+  z-index: 2;
+}
+
+.orangebox {
+  right: -12px;
+  bottom: -8px;
+  width: 69px;
+  z-index: 2;
+}
+
+.bluebox {
+  bottom: -49px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 49px;
+  z-index: 1;
+}
+
+/* Button style */
+.btn-success {
+  background: linear-gradient(90deg, #a5d84e, #74c043);
+  border: none;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 25px;
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #8ccd3b, #5fa532);
+}
+
+
+/* Button */
+.btn-success {
+  background: linear-gradient(90deg, #a5d84e, #74c043);
+  border: none;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.btn-success:hover {
+  background: linear-gradient(90deg, #8ccd3b, #5fa532);
+}
+
+/* Overlay Text inside the Board */
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  z-index: 6;
+}
+
+.overlay-text .dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.overlay-text .dot {
+  width: 12px;
+  height: 12px;
+  background-color: #d7f255; /* yellow-green color */
+  border-radius: 50%;
+}
+
+.overlay-text h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Ensure image below overlay */
+.main-board {
+  width: 90%;
+  border-radius: 10px;
+  z-index: 5;
+  position: relative;
+}
+
+
+/* Responsive text */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}
