@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: transparent;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.cv-btn {
+  padding: 8px 18px;
+  border: none;
+  background-color: #111827;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.cv-btn:hover {
+  background-color: #000;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 8%;
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-text h1 span {
+  color: #000;
+}
+
+.hero-text p {
+  max-width: 600px;
+  color: #444;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+/* Location and availability */
+.location p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.location i {
+  margin-right: 8px;
+  color: #666;
+}
+
+.status-dot {
+  height: 8px;
+  width: 8px;
+  background: #22c55e;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+/* Social Icons */
+.social-links {
+  margin-top: 25px;
+}
+
+.social-links a {
+  color: #333;
+  margin-right: 20px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+/* Image */
+.hero-img {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.hero-img img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 0 #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text p {
+    margin: 0 auto 20px;
+  }
+
+  .hero-img img {
+    margin-bottom: 40px;
+  }
+}
+
+.about-section {
+  padding: 80px 10%;
+}
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.about-image img {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 #e5e5e5;
+}
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+.about-btn {
+  background-color:#e6e7eb;
+  color: #444;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 28px;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  margin-bottom: 16px;
+  color: #555;
+}
+
+.about-content a {
+  color: #0077ff;
+  text-decoration: none;
+}
+
+}
+.about-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+
+.underline-text {
+  text-decoration: underline;
+}
+.about1{
+  display: block;
+  margin: auto;
+}
+.skills-section {
+  text-align: center;
+  padding: 60px 0;
+  background: white;
+}
+
+/* Heading with underline */
+.skills-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.skills-section h2::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: #00bcd4;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Skills container */
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap; /* so it looks good on mobile too */
+}
+.skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.skills-title {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #555;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.skills-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+
+.skill-item {
+  min-width: 90px;          
+  flex: 0 0 auto;           
+  text-align: center;
+}
+
+.skill-item img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: flex;
+  margin: 0 auto;
+  transition: transform 0.22s ease;
+}
+
+.skill-item img:hover { transform: translateY(-6px); }
+
+.skill-item p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #222;
+}
