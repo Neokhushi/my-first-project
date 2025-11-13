@@ -1,71 +1,156 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-body 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-ul li {
-  float: left;
-}
-
-ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-ul li a:hover:not(.active) {
- color: #white;
-}
-
-ul li a.active {
-  background-color:#013714;
-  font-size: 150%;
-   margin-right: 250px;
-}
-.simple-btn {
-  background-color: #333333;  
-  color: white;              
-  border: 10px;              
-  padding: 14px 16px;       
-  border-radius: 5px;       
-  cursor: pointer;           
-  font-size: 16px;  
-  margin-right: 50px;         
- 
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Sagar</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div>
-<ul>
-  <li><a class="active" href="#home"><b>Markethink</b></a></li>
-  <li><a href="#">Features</a></li>
-  <li><a href="#">Pricing</a></li>
-  <li><a href="#">About</a></li>
-   <li><a href="#">Contact Us</a></li>
-    <button class="simple-btn">Free trial</button>
+  <style>
+    .skills-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
 
-</ul>
-</div>
+.skills-title {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #555;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
 
-<div class="container">
+.skills-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
 
-<p>subscribe to get information,latest<br>
-  news and other interesting offers about
-</p>
-</div>
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.skill-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+}
+
+.skill-item p {
+  font-size: 14px;
+  color: #333;
+  margin: 0;
+}
+
+
+  </style>
+
+
+
+<section class="skills-section">
+  <div class="skills-title">Skills</div>
+  <p class="skills-subtitle">
+    The skills, tools and technologies I am really good at:
+  </p>
+
+  <div class="skills-grid">
+    <div class="skill-item">
+      <img src="img/js.png" alt="Javascript">
+      <p>Javascript</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/ts.png" alt="Typescript">
+      <p>Typescript</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/react.png" alt="React">
+      <p>React</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/next.png" alt="Next.js">
+      <p>Next.js</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/node.png" alt="Node.js">
+      <p>Node.js</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/express.png" alt="Express.js">
+      <p>Express.js</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/nest.png" alt="Nest.js">
+      <p>Nest.js</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/socket.png" alt="Socket.io">
+      <p>Socket.io</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/postgresql.png" alt="PostgreSQL">
+      <p>PostgreSQL</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/mongodb.png" alt="MongoDB">
+      <p>MongoDB</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/sass.png" alt="Sass/Scss">
+      <p>Sass/Scss</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/tailwind.png" alt="TailwindCSS">
+      <p>TailwindCSS</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/figma.png" alt="Figma">
+      <p>Figma</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/cypress.png" alt="Cypress">
+      <p>Cypress</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/storybook.png" alt="Storybook">
+      <p>Storybook</p>
+    </div>
+    <div class="skill-item">
+      <img src="img/git.png" alt="Git">
+      <p>Git</p>
+    </div>
+  </div>
+</section>
+
 </body>
 </html>
+
+
